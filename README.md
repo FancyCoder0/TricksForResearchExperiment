@@ -52,20 +52,45 @@ TODO
 
 ### 文件安全写入
 
+```
+def write_to_file(file, obj):
+    path = os.path.dirname(file)
+    if not os.path.exists(path):
+        os.makedirs(path)
+    with open(file, 'w') as write_file:
+        write_file.write(obj)
+    print('finish write %s to file....' % file)
+```
+
+
 ### 执行系统命令行
 
 ### json
+```
+result = json.load(f) # 导入
+
+with open(file, 'w') as f: # 导出
+    f.write(json.dumps(obj))
+```
 
 ### xml
 
 ### 多线程 多进程
 
+```
+from multiprocessing import Pool
+# ....
+# arr = [1,2,3]
+def work(x):
+  pass
+
+with Pool(processes=10) as pool:
+    result = pool.map(work, arr)
+```
 ### 设置超时
 
 
-### java cheat sheet
-
-## python cheat sheet
+## java cheat sheet
 
 ### 命令行参数解析
 
