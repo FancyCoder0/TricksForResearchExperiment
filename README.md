@@ -8,6 +8,10 @@
 
 ## Linux实用命令
 
+- 按时间顺序列出文件 ```ls -l -rt```
+
+- 杀死包含$name的进程 ```ps aux | grep $name | awk '{print $2}' | xargs kill -9```
+
 - 查看硬盘空间 ```df -h```
 
 - Linux中查看各文件夹大小命令 ```du -h --max-depth=1```
@@ -33,7 +37,7 @@
 ```zip -r $name.zip $filefolder```
 ```unzip $name.zip```
 
-# (TODO) 除去哪些文件：
+(TODO) 除去哪些文件：
 
 ### tar
 TODO
