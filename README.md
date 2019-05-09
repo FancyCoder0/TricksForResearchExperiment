@@ -20,10 +20,11 @@
 # 列表：tmux ls
 # 新建：tmux new -s $new_session_name
 # 进入：tmux a -t $session_name
+# 关闭：tmux kill-session -t $session_name
 # 分屏：Ctrl+B "
 # 分屏：Ctrl+B %
-# 退出：Ctrl+B d
-# 关闭: Ctrl+B x
+# 分离：Ctrl+B d
+# 关闭窗口: Ctrl+B x
 # 新建并运行程序： ``` tmux new-window -n:$new_window_name '$job' ```
 ```
 
