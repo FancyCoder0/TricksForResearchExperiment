@@ -2,6 +2,8 @@
 
 ## Linux实用命令
 
+- timeout(最靠谱的可以kill进程的方式) ``` timeout $seconds $job ```
+
 - 按时间顺序列出文件 ```ls -l -rt```
 
 - 杀死包含$name的进程 ```ps aux | grep $name | awk '{print $2}' | xargs kill -9```
