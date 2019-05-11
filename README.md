@@ -37,7 +37,7 @@
 
 ```unzip $name.zip```
 
-(TODO) 除去哪些文件：
+(TODO) 除去哪些文件
 
 ### tar
 TODO
@@ -46,6 +46,12 @@ TODO
 ## python cheat sheet
 
 ### 命令行参数解析
+
+```
+import sys
+
+x = sys.argv[1]
+```
 
 ### 文件读入
 
@@ -63,6 +69,17 @@ def write_to_file(file, obj):
 
 
 ### 执行系统命令行
+```
+os.system('echo 1')
+
+def exe_cmd(cmd):  # 返回结果
+    # print(cmd)
+    r = os.popen(cmd)  
+    text = r.read()  
+    r.close()  
+    return text 
+print(exe_cmd('echo 1'))
+```
 
 ### json
 ```
