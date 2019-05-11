@@ -23,11 +23,12 @@
 # 新建：tmux new -s $new_session_name
 # 进入：tmux a -t $session_name
 # 关闭：tmux kill-session -t $session_name
+# 新建并运行程序： tmux new-window -n:$new_window_name '$job'
+
 # 分屏：Ctrl+B "
 # 分屏：Ctrl+B %
 # 分离：Ctrl+B d
 # 关闭窗口: Ctrl+B x
-# 新建并运行程序： ``` tmux new-window -n:$new_window_name '$job' ```
 ```
 
 ## Linux解压缩 Cheat Sheet
@@ -143,4 +144,4 @@ with Pool(processes=10) as pool:
 		3.4.2 不太习惯vim的话就直接sshfs本地开编辑器改服务器程序
 		3.4.3 工欲善其事必*先*利其器 先考虑能不能自动化或利用方便处理过程 再去做事
 		3.4.4 熟悉常用的处理数据方法 json xml
-
+	3.5 timeout 使用Liunx自带的 可以保证到时间kill进程 目前跑多任务 倾向Python Multi Processing + Linux timeout
