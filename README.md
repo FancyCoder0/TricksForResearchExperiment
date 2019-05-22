@@ -137,11 +137,16 @@ with Pool(processes=10) as pool:
 2. 爬数据，就是一堆http request，我开始就写了一个for循环，加上国内爬GitHub网速慢。发现小的项目一晚上，就决定忍忍，后来发现大项目根本跑不完。解决：换成并发+美国服务器 建议：像这种http request并发可以显著提高效率。
 3. 运行实验。
 	3.1 程序要提供良好的命令行接口，然后可以利用脚本语言方便运行。 
+	
 	3.2 程序鲁棒性：异常处理、超时设置、写log、可重启
+	
 	3.3 要考虑到内存（Out of Memory），硬盘（磁盘写满）等问题  (这次全被我遇到了....)
+	
 	3.4 提高自动化程度
+	
 		3.4.1 利用tmux等工具 tmux可支持新建窗口并运行程序 ``` tmux new-window -n:mywindow1 'sleep 100' ```
 		3.4.2 不太习惯vim的话就直接sshfs本地开编辑器改服务器程序
 		3.4.3 工欲善其事必*先*利其器 先考虑能不能自动化或利用方便处理过程 再去做事
 		3.4.4 熟悉常用的处理数据方法 json xml
+
 	3.5 timeout 使用Liunx自带的 可以保证到时间kill进程 目前跑多任务 倾向Python Multi Processing + Linux timeout
