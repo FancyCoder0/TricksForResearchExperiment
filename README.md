@@ -16,6 +16,8 @@
 
 - 记录屏幕输出: ``` $job | tee ```
 
+- 搜索文件并按时间顺序给出结果 ```find ./ -name '$expr' | xargs ls -lta```
+
 ## Tmux Cheat Sheet
 
 ```
