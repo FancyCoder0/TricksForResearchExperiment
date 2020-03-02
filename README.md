@@ -18,6 +18,9 @@
 
 - 搜索文件并按时间顺序给出结果 ```find ./ -name '$expr' | xargs ls -lta```
 
+- 查看Python库版本 ```python -c "import tensorflow as tf;print(tf.__version__)"```
+
+
 ## Tmux Cheat Sheet
 
 ```
@@ -107,7 +110,6 @@ with Pool(processes=10) as pool:
     result = pool.map(work, arr)
 ```
 ### 设置超时
-
 
 ## java cheat sheet
 
